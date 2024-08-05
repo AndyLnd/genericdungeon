@@ -10,7 +10,7 @@
     "webpack-serve": "^2.0.2"
   },
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack-serve"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production && cp index.html style.css dist",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider webpack-serve"
   }
 }
